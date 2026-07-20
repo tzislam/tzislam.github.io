@@ -1,0 +1,126 @@
+// Content loaders. The PI edits these source files directly and pushes.
+//   - profile.json holds the identity/bio/links (structured, so it stays JSON).
+//   - Every list section is a CSV so it can be edited in any spreadsheet
+//     (Excel / Numbers / Google Sheets): add a row, save as CSV, push.
+import profile from '@/contents/profile.json';
+
+import awardsCsv from '@/contents/awards.csv?raw';
+import fundingCsv from '@/contents/funding.csv?raw';
+import teachingCsv from '@/contents/teaching.csv?raw';
+import serviceCsv from '@/contents/service.csv?raw';
+import panelsCsv from '@/contents/panels.csv?raw';
+import talksCsv from '@/contents/talks.csv?raw';
+import membershipCsv from '@/contents/membership.csv?raw';
+
+export interface ListItem {
+  text: string;
+  highlight?: boolean;
+  new?: boolean;
+}
+
+/**
+ * Minimal RFC-4180-style CSV parser: handles quoted fields, embedded commas,
+ * and escaped double-quotes ("") — which the funding/awards text needs. Returns
+ * an array of row objects keyed by the header row.
+ */
+function parseCsv(raw: string): Record<string, string>[] {
+  const rows: string[][] = [];
+  let field = '';
+  let row: string[] = [];
+  let inQuotes = false;
+
+  for (let i = 0; i < raw.length; i++) {
+    const c = raw[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (raw[i + 1] === '"') {
+          field += '"';
+          i++;
+        } else {
+          inQuotes = false;
+        }
+      } else {
+        field += c;
+      }
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ',') {
+      row.push(field);
+      field = '';
+    } else if (c === '\n') {
+      row.push(field);
+      rows.push(row);
+      row = [];
+      field = '';
+    } else if (c !== '\r') {
+      field += c;
+    }
+  }
+  if (field.length > 0 || row.length > 0) {
+    row.push(field);
+    rows.push(row);
+  }
+  if (rows.length === 0) return [];
+
+  const header = rows[0].map((h) => h.trim());
+  return rows
+    .slice(1)
+    .filter((r) => r.some((c) => c.trim() !== ''))
+    .map((r) => {
+      const obj: Record<string, string> = {};
+      header.forEach((h, idx) => {
+        obj[h] = (r[idx] ?? '').trim();
+      });
+      return obj;
+    });
+}
+
+const truthy = (v?: string): boolean =>
+  !!v && ['true', 'yes', '1', 'x', 'y'].includes(v.toLowerCase());
+
+function csvToItems(raw: string): ListItem[] {
+  return parseCsv(raw)
+    .map((r) => {
+      const item: ListItem = { text: r.text ?? '' };
+      if (truthy(r.highlight)) item.highlight = true;
+      if (truthy(r.new)) item.new = true;
+      return item;
+    })
+    .filter((i) => i.text.length > 0);
+}
+
+export interface Profile {
+  name: string;
+  title: string;
+  subtitle: string;
+  tagline: string;
+  email: string;
+  office: string;
+  headshot: string;
+  cv: string;
+  links: { scholar: string; dblp: string; github: string; linkedin: string };
+  lab: { url: string; research: string; publications: string };
+  bwcse: string;
+  stats: { label: string; value: string }[];
+  bio: string[];
+  labBlurb: string;
+}
+
+export const profileData = profile as Profile;
+
+// Section headings for the CSV-backed lists (edit here if you rename a section);
+// the rows themselves live in the matching contents/*.csv files.
+export const awardsData = { heading: 'Awards & Honors', items: csvToItems(awardsCsv) };
+export const fundingData = {
+  heading: 'Research and Other Fundings (PI/Co-PI; $4.6M+)',
+  items: csvToItems(fundingCsv),
+};
+export const teachingData = { heading: 'Teaching', items: csvToItems(teachingCsv) };
+export const serviceData = {
+  heading: 'Organizer / Committee Member / Reviewer / Leadership',
+  service: csvToItems(serviceCsv),
+  proposalPanelsHeading: 'Proposal Review Panels',
+  proposalPanels: csvToItems(panelsCsv),
+};
+export const talksData = { heading: 'Invited Talks, Workshops, Panels', items: csvToItems(talksCsv) };
+export const membershipData = { heading: 'Membership', items: csvToItems(membershipCsv) };
