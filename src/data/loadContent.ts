@@ -91,8 +91,10 @@ function csvToItems(raw: string): ListItem[] {
 
 export interface Profile {
   name: string;
+  credential: string;
   title: string;
   subtitle: string;
+  roles: { role: string; org: string; url: string }[];
   tagline: string;
   email: string;
   office: string;

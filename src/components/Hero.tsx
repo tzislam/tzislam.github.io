@@ -2,16 +2,30 @@ import { GraduationCap, FileText, Github, Linkedin, Mail, FlaskConical } from 'l
 import { profileData } from '../data/loadContent';
 
 export default function Hero() {
-  const { name, title, subtitle, tagline, headshot, cv, email, links, lab, stats } = profileData;
+  const { name, credential, roles, tagline, headshot, cv, email, links, lab, stats } = profileData;
   return (
     <header className="hero">
       <div className="container">
         <div className="hero-grid">
-          <div>
-            <h1>{name}</h1>
-            <p className="title">{title}</p>
-            <p className="subtitle">{subtitle}</p>
+          <div className="hero-lead">
+            <h1 className="hero-name">{name}</h1>
+            <hr className="hero-rule" />
+
+            <div className="roles">
+              {credential && <p className="credential">{credential}</p>}
+              {roles.map((r) => (
+                <p className="role" key={r.role}>
+                  <span className="role-title">{r.role}</span>
+                  <a href={r.url} target="_blank" rel="noopener noreferrer">{r.org}</a>
+                </p>
+              ))}
+              <p className="role role-contact">
+                <Mail size={15} /> <a href={`mailto:${email}`}>{email}</a>
+              </p>
+            </div>
+
             <p className="tagline">{tagline}</p>
+
             <div className="quicklinks">
               <a className="chip primary" href={lab.url} target="_blank" rel="noopener noreferrer">
                 <FlaskConical size={16} /> Per4ML Lab
@@ -21,7 +35,6 @@ export default function Hero() {
                 <GraduationCap size={16} /> Scholar
               </a>
               <a className="chip" href={links.dblp} target="_blank" rel="noopener noreferrer">DBLP</a>
-              <a className="chip" href={`mailto:${email}`}><Mail size={16} /> Email</a>
               <a className="chip" href={links.github} target="_blank" rel="noopener noreferrer">
                 <Github size={16} /> GitHub
               </a>
@@ -30,7 +43,15 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <img className="headshot" src={headshot} alt={`Portrait of ${name}`} />
+
+          <div className="hero-cards">
+            {/* Logo card — swap the text below for <img src="/per4ml-logo.png" /> when the asset is added */}
+            <a className="logo-card" href={lab.url} target="_blank" rel="noopener noreferrer">
+              <span className="logo-mark">Per4<span className="logo-accent">ML</span></span>
+              <span className="logo-sub">Laboratory</span>
+            </a>
+            <img className="headshot" src={headshot} alt={`Portrait of ${name}`} />
+          </div>
         </div>
 
         <div className="stats">

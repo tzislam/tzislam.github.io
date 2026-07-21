@@ -1,7 +1,20 @@
 {
   "name": "Tanzima Z. Islam",
+  "credential": "Ph.D.",
   "title": "Associate Professor of Computer Science, Texas State University",
   "subtitle": "Director, Per4ML Laboratory",
+  "roles": [
+    {
+      "role": "Associate Professor",
+      "org": "Department of Computer Science, Texas State University",
+      "url": "https://www.cs.txstate.edu/"
+    },
+    {
+      "role": "Associate Computational Scientist",
+      "org": "AI Department, Computing and Data Sciences Directorate, Brookhaven National Laboratory",
+      "url": "https://www.bnl.gov/compsci/"
+    }
+  ],
   "tagline": "I build software tools and data-driven methods that automatically find and reason about the performance of scientific applications on high-performance computing systems.",
   "email": "tanzima@txstate.edu",
   "office": "Comal Building, Texas State University, San Marcos, TX",
@@ -26,9 +39,9 @@
     { "label": "BWCSE founded", "value": "2014" }
   ],
   "bio": [
-    "I earned my Ph.D. in Computer Engineering from Purdue University and was a postdoctoral scholar at Lawrence Livermore National Laboratory (LLNL). My research develops software tools and data-driven analysis techniques to automatically identify performance problems of scientific applications running on High-Performance Computing (HPC) systems.",
-    "I have received two prestigious and highly selective early-career awards: the NSF CAREER Award and the Department of Energy's (DOE) Early Career Research Program (ECRP) Award. The impact of my research has been recognized nationally and internationally through awards such as the R&D 100 award, the Science and Technology award from LLNL, and TXST's Presidential Award. DOE, NSF, TXST, AMD, and various national laboratories have generously funded my research.",
-    "I am also the co-founder of Bangladeshi Women in Computer Science and Engineering (BWCSE) — a pioneering platform launched in 2014 to support Bangladeshi women pursuing degrees in computing. Through a combination of mentoring, research guidance, and resource sharing, BWCSE has empowered hundreds of students to elevate their scholarly achievements, connect with national and international opportunities, and launch their graduate and professional careers."
+    "Tanzima Z. Islam earned a Ph.D. in Computer Engineering from Purdue University and was a postdoctoral scholar at Lawrence Livermore National Laboratory (LLNL). Islam's research develops software tools and data-driven analysis techniques to automatically identify performance problems of scientific applications running on High-Performance Computing (HPC) systems.",
+    "Islam has received two prestigious and highly selective early-career awards: the NSF CAREER Award and the Department of Energy's (DOE) Early Career Research Program (ECRP) Award. The impact of this research has been recognized nationally and internationally through honors such as the R&D 100 Award, the Science and Technology Award from LLNL, and Texas State's Presidential Award. DOE, NSF, Texas State, AMD, and various national laboratories have generously funded this work.",
+    "Islam is also the co-founder of Bangladeshi Women in Computer Science and Engineering (BWCSE) — a pioneering platform launched in 2014 to support Bangladeshi women pursuing degrees in computing. Through a combination of mentoring, research guidance, and resource sharing, BWCSE has empowered hundreds of students to elevate their scholarly achievements, connect with national and international opportunities, and launch their graduate and professional careers."
   ],
   "labBlurb": "I lead the Per4ML laboratory, dedicated to building intelligent, scalable systems that learn and adapt to the evolving demands of high-performance computing and cyberinfrastructure. Per4ML drives research across AI, machine learning, and systems to accelerate scientific discovery through faster, smarter, and more resilient computing. We are looking for curious, ambitious students — Postdocs, RAs, and undergraduates — who are excited to push the boundaries of AI-driven systems research. Join us to help shape the future of intelligent computing."
 }
