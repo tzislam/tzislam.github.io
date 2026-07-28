@@ -114,7 +114,7 @@ export const profileData = profile as Profile;
 // the rows themselves live in the matching contents/*.csv files.
 export const awardsData = { heading: 'Awards & Honors', items: csvToItems(awardsCsv) };
 export const fundingData = {
-  heading: 'Research and Other Fundings (PI/Co-PI; $4.6M+)',
+  heading: 'Research and Other Fundings (PI/Co-PI; $5.35M+)',
   items: csvToItems(fundingCsv),
 };
 export const teachingData = { heading: 'Teaching', items: csvToItems(teachingCsv) };

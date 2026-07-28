@@ -31,6 +31,63 @@ npm install
 
 ---
 
+## 1b. If your system's `npm` is broken or too old (self-contained setup)
+
+Use this **instead of** installing Node system-wide when the machine's Node/npm is stuck at an old
+version you can't (or don't want to) fix. It installs a **private, project-local copy of Node + npm
+inside a Python virtual environment**, so it never touches — and never depends on — the system's
+Node. Verified on **Apple Silicon (arm64) with Python 3.12**.
+
+> Why this works: [`nodeenv`](https://github.com/ekalinin/nodeenv) downloads a self-contained Node
+> (with its matching `npm`) into the venv's `bin/`. While the venv is *activated*, that `bin/` sits
+> first on your `PATH`, so `node`/`npm` resolve to the private copy and the broken system one is
+> ignored. Deactivate and your system is exactly as before.
+
+**One-time setup (run in this project folder):**
+
+```bash
+# 1. Confirm you have the Apple-Silicon Python 3.12 (should print: Python 3.12.x  and  arm64)
+python3.12 --version
+python3.12 -c "import platform; print(platform.machine())"
+
+# 2. Create + activate an isolated Python 3.12 environment
+python3.12 -m venv .venv
+source .venv/bin/activate
+
+# 3. Install nodeenv, then drop a modern Node LTS (+ npm) INTO this venv
+python -m pip install --upgrade pip nodeenv
+nodeenv -p --node=lts          # want a specific version? use e.g. --node=22.11.0
+
+# 4. Re-activate so the new node/npm are picked up, then confirm they're the private copies
+deactivate && source .venv/bin/activate
+which node   # → .../tzislam.github.io/.venv/bin/node   (NOT /opt/local or /usr/local)
+node -v      # → v20+ (needs to be 20 or newer for Vite 6)
+npm -v
+```
+
+**Then install deps and run the site — from the activated venv:**
+
+```bash
+npm install        # one time
+npm run dev        # → http://localhost:3000  (continue with §3 below)
+```
+
+**Every new terminal**, re-activate before running npm — that's the only recurring step:
+
+```bash
+cd <this folder> && source .venv/bin/activate
+npm run dev
+```
+
+Run `deactivate` when you're done to return to the normal shell. The `.venv` folder is local-only
+(git-ignored) — delete it anytime and re-run the one-time setup to rebuild it from scratch.
+
+> `python3.12` not found? Install it (native arm64), e.g. `brew install python@3.12`, or from
+> <https://www.python.org/downloads/macos/>. Avoid the old x86_64 `python3` — check with the
+> `platform.machine()` command in step 1; it must say `arm64`.
+
+---
+
 ## 2. Where to change what
 
 **You almost never touch the code.** Content lives in two easy places:

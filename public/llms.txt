@@ -32,11 +32,12 @@
 - RECUP — performance reproducibility on heterogeneous supercomputers
 
 ## Recognition
+- Inaugural Genesis Mission Phase 1 Award (2026)
 - NSF CAREER Award (2025)
 - DOE Early Career Research Program (ECRP) Award (2022)
 - R&D 100 Award (2019, Scalable Checkpoint-restart library)
 - Director's Science & Technology Award, LLNL (2014); TXST Presidential & Distinction awards
-- $4.6M+ in research funding (PI/Co-PI) from NSF, DOE, AMD, and national labs (LLNL, BNL, ORNL, LBNL)
+- $5.35M+ in research funding (PI/Co-PI) from NSF, DOE, AMD, and national labs (LLNL, BNL, ORNL, LBNL)
 
 ## Community
 - Co-founder, Bangladeshi Women in Computer Science and Engineering (BWCSE), since 2014
