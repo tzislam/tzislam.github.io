@@ -7,6 +7,9 @@
    dark mode. Distinct from the Per4ML lab's navy/teal, but same care.
    =================================================================== */
 :root {
+  /* Content column width, shared by every section (matches per4ml.github.io) */
+  --content-width: min(1440px, 92vw);
+
   --bg: #faf8f4;        /* warm paper */
   --surface: #ffffff;   /* cards */
   --ink: #1a1a2e;       /* primary text */
@@ -38,6 +41,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* Base type scale — matches per4ml.github.io (18px body copy).
+     Every rule below sizes text in rem, so this scales the whole site. */
+  font-size: 18px;
 }
 
 body {
@@ -45,7 +51,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -85,7 +91,7 @@ main {
 }
 .container {
   width: 100%;
-  max-width: min(1440px, 92vw);
+  max-width: var(--content-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -119,7 +125,7 @@ main {
   border-bottom: 1px solid var(--border);
 }
 .nav-inner {
-  max-width: min(1440px, 92vw);
+  max-width: var(--content-width);
   margin: 0 auto;
   padding: 0.7rem 1.5rem;
   display: flex;
