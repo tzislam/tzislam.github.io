@@ -208,7 +208,7 @@ All the service/teaching content from the current site, grouped with `SectionLis
 2. **Organizer / Committee Member / Reviewer / Leadership** — from `service.json`.
 3. **Proposal Review Panels** — from `service.json` (DOE ECRP, NSF CISE/OAC, …).
 4. **Invited Talks, Workshops, Panels** — from `talks.json`.
-5. **Membership** — from `membership.json` (TPDS Board 2020–present, ACM, IEEE, Founder BWCSE).
+5. **Membership** — from `membership.json` (TPDS Board 2020–present, ACM, IEEE, Co-founder BWCSE).
 
 ---
 
@@ -518,6 +518,6 @@ Console after cutover.
 - **Service/Leadership + Proposal Panels:** "Organizer/Committee Member/Reviewer/Leadership" and
   "Proposal Review Panel" lists → `service.json`.
 - **Invited talks:** "Invited Talks, Workshops, Panels" list → `talks.json`.
-- **Membership:** "Member" list (TPDS Board, ACM, IEEE, Founder BWCSE) → `membership.json`.
+- **Membership:** "Member" list (TPDS Board, ACM, IEEE, Co-founder BWCSE) → `membership.json`.
 - **Research / Publications page bodies:** short first-person intro only — the substance is linked to
   the Per4ML lab, not seeded here.

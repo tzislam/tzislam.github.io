@@ -46,7 +46,7 @@ export default function Hero() {
 
           <div className="hero-cards">
             <a className="logo-card" href={lab.url} target="_blank" rel="noopener noreferrer">
-              <img src="/per4ml-logo.png" alt="Per4ML Laboratory" />
+              <img src="/images/lab/per4ml-mark.png" alt="Per4ML Laboratory" />
             </a>
             <img className="headshot" src={headshot} alt={`Portrait of ${name}`} />
           </div>
