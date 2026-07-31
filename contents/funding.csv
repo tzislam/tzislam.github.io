@@ -1,17 +1,20 @@
 text,highlight,new
-"PI, Genesis Mission Phase 1 Award, Title: ""OPTIX: A Multi-Modal Foundation Model for Performance-Aware HPC Code Intelligence"", 750K (9-months, 2026)",true,true
-"PI, NSF CAREER Award, Title: SPEED: Scalable Performance-aware Engine for Efficient Decision-making on HPC Systems, 650K (2025-2030)",true,
-"PI, Oak Ridge National Labs, $16K (Summer 2024)",,
-"PI, Performance Analysis using Machine Learning: Use Case Chimbuko, DOE SRP-HPC Fellowship, $85K (Summer 2023).",,
-"PI, AMD Research Gift, 225K (2021-Present)",,true
-"PI, DOE Early Career Research Program (ECRP), Title: INTELYTICS: An Efficient Data-Driven Decision-Making Engine for Performance In the Era of Heterogeneity, 770K (2022-2027)",true,
-"Co-PI, Scalable Metadata And Provenance Services for Reproducible Hybrid Workflows, DOE Next Generation Data Management, 2.43M (2022-2026, TXST: 300K)",,
-"Sub-contract, FRACTAL-SI: Resource Allocation for Center-Wide Throughput Acceleration Leveraging Elasticity, Strategic Initiative from Laboratory Directed Research and Development at Lawrence Livermore National Laboratory, 3.3M/year (2023-2026, TXST PI: 100K/year)",,
-"Sub-contract, ICE4HPC: Towards the Intelligent Center for HPC, Laboratory Directed Research and Development at Lawrence Livermore National Laboratory, 100K (2022-2023)",,
-"PI, Characterizing Workflow Applications using Machine Learning, DOE SRP-HPC fellowship at Brookhaven National Lab, 68K (2022)",,
-"PI, Research Enhancement Program (REP) at TXST, 8K (2021)",,
-"Co-PI, AMD COVID HPC Grant, 5-petaflops HPC system (Equipment grant), 400K (2021)",,
-"PI, Proxy Application Validation for Exascale Co-design. SRP fellowship at Lawrence Berkeley National Laboratory, 43K (2019)",,
-"PI, Parallel Computing course. Time allocation grant from XSEDE, 100K core hours (2017, 2018, 2021, 2022)",,
-"Co-PI, course development for ""Scientific Data Visualization"". Office of Research and Sponsored Programs at Western Washington University, 12K (2018)",,
-"PI, Veritas for Understanding Performance Evolution during Code Development. Linking Exploratory Application Research to Next-gen Development at Lawrence Livermore National Laboratory, 200K (2016)",,
+"PI, OPTIX: A Multi-Modal Foundation Model for Performance-Aware HPC Code Intelligence, Department of Energy's Inaugural Genesis Mission Phase 1 Award, $750K (9 months, 2026)",true,true
+"PI, NSF REU Supplemental Award, CRA, $10K (2026)",,true
+"PI, SPEED: Scalable Performance-aware Engine for Efficient Decision-making on HPC Systems, NSF CAREER program, $650K (2025-2030)",true,
+"PI, Application Fingerprinting, DOE STEP: Software Tools Ecosystem Project at Oak Ridge National Laboratory, $16K (Summer 2024)",,
+"PI, Performance Analysis using Machine Learning: Use Case Chimbuko, DOE SRP-HPC Fellowship, $85K (Summer 2023)",,
+"Sub-contract, FRACTAL-SI: Resource Allocation for Center-Wide Throughput Acceleration Leveraging Elasticity, Strategic Initiative from Laboratory Directed Research and Development at Lawrence Livermore National Laboratory, $3.3M/year (2023-2026, TXST PI: $100K/year)",,
+"PI, INTELYTICS: An Efficient Data-Driven Decision-Making Engine for Performance In the Era of Heterogeneity, DOE Early Career Research Program (ECRP), $770K (2022-2027)",true,
+"Co-PI, RECUP: Scalable Metadata And Provenance Services for Reproducible Hybrid Workflows, DOE Next Generation Data Management, $2.43M (2022-2026, TXST PI: $300K)",,
+"Member, Cross-Institutional Research Pathways to Graduate Education in the Natural Sciences: A Partnership between Texas State University and the University of Colorado, SLOAN Foundation, $250K (2022-2024)",,
+"Sub-contract, ICE4HPC: Towards the Intelligent Center for HPC, Laboratory Directed Research and Development at Lawrence Livermore National Laboratory, $100K (2022-2023)",,
+"PI, Characterizing Workflow Applications using Machine Learning, DOE SRP-HPC Fellowship at Brookhaven National Laboratory, $68K (2022)",,
+"PI, PerfROCm: Cross-platform performance prediction and analysis using deep learning, AMD Research Gift, $225K (2021-Present)",,true
+"Member, REU Site: Research Experiences for Undergraduates in Edge Computing, NSF, $389K (2021-2024)",,
+"PI, Predicting Performance using Few Shot Learning, Research Enhancement Program (REP) at Texas State University, $8K (2021)",,
+"Co-PI, AMD COVID HPC Grant, 5-petaflops HPC system (equipment grant), $400K (2021)",,
+"PI, Proxy Application Validation for Exascale Co-design, DOE Sustainable Research Pathway Fellowship at Lawrence Berkeley National Laboratory, $43K (Summer 2019)",,
+"Co-PI, Scientific Data Visualization course development, Office of Research and Sponsored Programs at Western Washington University, $12K (2018)",,
+"PI, Parallel Computing course, Time allocation grant from XSEDE, 100K core-hours (2017-2022)",,
+"PI, Veritas for Understanding Performance Evolution during Code Development, Linking Exploratory Application Research to Next-gen Development at Lawrence Livermore National Laboratory, $200K (2016)",,
