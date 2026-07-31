@@ -45,10 +45,8 @@ export default function Hero() {
           </div>
 
           <div className="hero-cards">
-            {/* Logo card — swap the text below for <img src="/per4ml-logo.png" /> when the asset is added */}
             <a className="logo-card" href={lab.url} target="_blank" rel="noopener noreferrer">
-              <span className="logo-mark">Per4<span className="logo-accent">ML</span></span>
-              <span className="logo-sub">Laboratory</span>
+              <img src="/per4ml-logo.png" alt="Per4ML Laboratory" />
             </a>
             <img className="headshot" src={headshot} alt={`Portrait of ${name}`} />
           </div>
