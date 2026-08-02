@@ -7,8 +7,10 @@
    dark mode. Distinct from the Per4ML lab's navy/teal, but same care.
    =================================================================== */
 :root {
-  /* Content column width, shared by every section (matches per4ml.github.io) */
-  --content-width: min(1440px, 92vw);
+  /* Content column width, shared by every section. The cap only kicks in on
+     very wide displays; below that the column is 94vw so the side gutters
+     stay thin instead of ballooning. */
+  --content-width: min(1900px, 94vw);
 
   --bg: #faf8f4;        /* warm paper */
   --surface: #ffffff;   /* cards */
@@ -41,9 +43,10 @@
 
 html {
   scroll-behavior: smooth;
-  /* Base type scale — matches per4ml.github.io (18px body copy).
-     Every rule below sizes text in rem, so this scales the whole site. */
-  font-size: 18px;
+  /* Base type scale. Every rule below sizes text in rem, so this scales the
+     whole site. Fluid: 18px on laptops (<=1440px), growing to 24px on large
+     desktop monitors so body copy stays readable at normal viewing distance. */
+  font-size: clamp(18px, 0.536vw + 10.28px, 24px);
 }
 
 body {
@@ -189,7 +192,9 @@ main {
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 260px;
+  /* rem-based so the photo/logo column keeps its proportion to the type
+     as the root font size grows on large displays */
+  grid-template-columns: minmax(0, 1fr) 15rem;
   gap: 2.5rem;
   align-items: start;
 }
@@ -521,11 +526,21 @@ main {
 
 /* ---- Responsive ---- */
 @media (max-width: 760px) {
+  /* On phones the gutter comes from the container padding alone, so text
+     never crowds the screen edge. */
+  :root {
+    --content-width: 100%;
+  }
+  .container,
+  .nav-inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
   }
   .hero-cards {
-    max-width: 260px;
+    max-width: 15rem;
   }
   .stats {
     grid-template-columns: repeat(2, 1fr);
