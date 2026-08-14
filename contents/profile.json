@@ -1,7 +1,6 @@
 {
   "name": "Tanzima Z. Islam",
   "credential": "Ph.D.",
-  "title": "Associate Professor of Computer Science, Texas State University",
   "subtitle": "Director, Per4ML Laboratory",
   "roles": [
     {
@@ -33,14 +32,14 @@
   "bwcse": "https://bwcse.github.io",
   "stats": [
     { "label": "Research funding (PI/Co-PI)", "value": "$5.25M+" },
+    { "label": "Research funding (as PI)", "value": "$3.435M+" },
     { "label": "Early-career awards", "value": "2" },
     { "label": "Students & mentees empowered", "value": "100s" },
-    { "label": "BWCSE founded", "value": "2014" }
+    { "label": "BWCSE co-founded", "value": "2014" }
   ],
   "bio": [
-    "Tanzima Z. Islam earned a Ph.D. in Computer Engineering from Purdue University and was a postdoctoral scholar at Lawrence Livermore National Laboratory (LLNL). Islam's research develops software tools and data-driven analysis techniques to automatically identify performance problems of scientific applications running on High-Performance Computing (HPC) systems.",
-    "Islam has received two prestigious and highly selective early-career awards: the NSF CAREER Award and the Department of Energy's (DOE) Early Career Research Program (ECRP) Award. The impact of this research has been recognized nationally and internationally through honors such as the R&D 100 Award, the Science and Technology Award from LLNL, and Texas State's Presidential Award. DOE, NSF, Texas State, AMD, and various national laboratories have generously funded this work.",
+    "Tanzima Z. Islam earned a Ph.D. in Computer Engineering from Purdue University and was a postdoctoral scholar at Lawrence Livermore National Laboratory (LLNL). Islam's research develops software tools and data-driven analysis techniques to automatically identify performance problems of scientific applications running on High-Performance Computing (HPC) systems and mitigate them. Islam has received prestigious and highly selective awards such as the NSF CAREER award, the Department of Energy's (DOE) Early Career Research (ECR) award, and most recently, is leading one of the inaugural Genesis Mission Phase I awards. The impact of her research has been recognized nationally and internationally through honors such as the R&D 100 Award, the Science and Technology Award from LLNL, and Texas State's Presidential Award. DOE, NSF, Texas State, AMD, and various national laboratories have generously funded her pioneering work in the intersection of data science and HPC.",
     "Islam is also the co-founder of Bangladeshi Women in Computer Science and Engineering (BWCSE) — a pioneering platform launched in 2014 to support Bangladeshi women pursuing degrees in computing. Through a combination of mentoring, research guidance, and resource sharing, BWCSE has empowered hundreds of students to elevate their scholarly achievements, connect with national and international opportunities, and launch their graduate and professional careers."
   ],
-  "labBlurb": "I lead the Per4ML laboratory, dedicated to building intelligent, scalable systems that learn and adapt to the evolving demands of high-performance computing and cyberinfrastructure. Per4ML drives research across AI, machine learning, and systems to accelerate scientific discovery through faster, smarter, and more resilient computing. We are looking for curious, ambitious students — Postdocs, RAs, and undergraduates — who are excited to push the boundaries of AI-driven systems research. Join us to help shape the future of intelligent computing."
+  "labBlurb": "Tanzima leads the Per4ML laboratory, dedicated to building intelligent, scalable systems that learn and adapt to the evolving demands of heterogeneous cyberinfrastructure. Per4ML drives research across AI, machine learning, and systems to accelerate scientific discovery through faster, smarter, and resilient computing. Per4ML is looking for self-motivated students including Postdocs, graduates, and undergraduates — who are excited to push the boundaries of AI-driven systems research. Join us to help shape the future of intelligent computing."
 }

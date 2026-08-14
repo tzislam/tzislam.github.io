@@ -331,7 +331,8 @@ main {
 /* ---- Stats ---- */
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* auto-fit so the row adapts when a stat is added or removed in profile.json */
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
