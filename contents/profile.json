@@ -33,7 +33,6 @@
   "stats": [
     { "label": "Research funding (PI/Co-PI)", "value": "$5.25M+" },
     { "label": "Research funding (as PI)", "value": "$3.435M+" },
-    { "label": "Early-career awards", "value": "2" },
     { "label": "Students & mentees empowered", "value": "100s" },
     { "label": "BWCSE co-founded", "value": "2014" }
   ],
