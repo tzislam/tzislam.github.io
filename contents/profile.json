@@ -31,14 +31,26 @@
   },
   "bwcse": "https://bwcse.github.io",
   "stats": [
-    { "label": "Research funding (PI/Co-PI)", "value": "$5.25M+" },
-    { "label": "Research funding (as PI)", "value": "$3.435M+" },
-    { "label": "Students & mentees empowered", "value": "100s" },
-    { "label": "BWCSE co-founded", "value": "2014" }
+    {
+      "label": "Research funding (PI/Co-PI)",
+      "value": "$5.25M+"
+    },
+    {
+      "label": "Research funding (as PI)",
+      "value": "$3.435M+"
+    },
+    {
+      "label": "Students & mentees empowered",
+      "value": "100+"
+    },
+    {
+      "label": "BWCSE co-founded",
+      "value": "2014"
+    }
   ],
   "bio": [
-    "Tanzima Z. Islam earned a Ph.D. in Computer Engineering from Purdue University and was a postdoctoral scholar at Lawrence Livermore National Laboratory (LLNL). Islam's research develops software tools and data-driven analysis techniques to automatically identify performance problems of scientific applications running on High-Performance Computing (HPC) systems and mitigate them. Islam has received prestigious and highly selective awards such as the NSF CAREER award, the Department of Energy's (DOE) Early Career Research (ECR) award, and most recently, is leading one of the inaugural Genesis Mission Phase I awards. The impact of her research has been recognized nationally and internationally through honors such as the R&D 100 Award, the Science and Technology Award from LLNL, and Texas State's Presidential Award. DOE, NSF, Texas State, AMD, and various national laboratories have generously funded her pioneering work in the intersection of data science and HPC.",
-    "Islam is also the co-founder of Bangladeshi Women in Computer Science and Engineering (BWCSE) — a pioneering platform launched in 2014 to support Bangladeshi women pursuing degrees in computing. Through a combination of mentoring, research guidance, and resource sharing, BWCSE has empowered hundreds of students to elevate their scholarly achievements, connect with national and international opportunities, and launch their graduate and professional careers. Islam also volunteers as a coach for an elementary-school FIRST LEGO League team, teaching children to design, build, and program robots and to research solutions to real-world problems. In 2026, her team won the Best Innovation Project Award at the Central Texas Qualifier and the Best Robot Design Award at the Texas Regional Championship."
+    "Tanzima Z. Islam is an Associate Professor of Computer Science at Texas State University, an Associate Computational Scientist in the AI Department at Brookhaven National Laboratory (BNL), and the director of the Per4ML Laboratory. She earned a Ph.D. in Electrical and Computer Engineering from Purdue University and was a Postdoctoral Research Staff Member at Lawrence Livermore National Laboratory (LLNL). Islam's research develops software tools and data-driven analysis techniques to automatically identify performance problems of scientific applications running on High-Performance Computing (HPC) systems and mitigate them. Islam has received prestigious and highly selective awards such as the NSF CAREER award and the Department of Energy's (DOE) Early Career Research Program (ECRP) award, and she leads one of the DOE's inaugural Genesis Mission Phase I awards. In 2026, ACM SIGHPC named her an Emerging Woman Leader in Technical Computing. The impact of her research has been recognized nationally and internationally through honors such as the R&D 100 Award, the Director's Science & Technology Award from LLNL, and Texas State's Presidential Award. DOE, NSF, Texas State, AMD, and various national laboratories have generously funded her pioneering work in the intersection of data science and HPC.",
+    "Islam is also the co-founder of Bangladeshi Women in Computer Science and Engineering (BWCSE) — a pioneering platform launched in 2014 to support Bangladeshi women pursuing degrees in computing. Through a combination of mentoring, research guidance, and resource sharing, BWCSE has empowered more than 100 students to elevate their scholarly achievements, connect with national and international opportunities, and launch their graduate and professional careers. Islam also volunteers as a coach for an elementary-school FIRST LEGO League team, teaching children to design, build, and program robots and to research solutions to real-world problems. In 2026, her team won the Best Innovation Project Award at the Central Texas Qualifier and the Best Robot Design Award at the Texas Regional Championship."
   ],
-  "labBlurb": "Tanzima leads the Per4ML laboratory, dedicated to building intelligent, scalable systems that learn and adapt to the evolving demands of heterogeneous cyberinfrastructure. Per4ML drives research across AI, machine learning, and systems to accelerate scientific discovery through faster, smarter, and resilient computing. Per4ML is looking for self-motivated students including Postdocs, graduates, and undergraduates — who are excited to push the boundaries of AI-driven systems research. Join us to help shape the future of intelligent computing."
+  "labBlurb": "Tanzima leads the Per4ML laboratory, dedicated to building intelligent, scalable systems that learn and adapt to the evolving demands of heterogeneous cyberinfrastructure. Per4ML drives research across AI, machine learning, and systems to accelerate scientific discovery through faster, smarter, and resilient computing. Per4ML is looking for self-motivated Postdocs, Graduate students, and Undergraduate students who are excited to push the boundaries of AI-driven systems research. Join us to help shape the future of intelligent computing."
 }

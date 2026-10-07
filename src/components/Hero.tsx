@@ -24,7 +24,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <p className="tagline">{tagline}</p>
+            {tagline && <p className="tagline">{tagline}</p>}
 
             <div className="quicklinks">
               <a className="chip primary" href={lab.url} target="_blank" rel="noopener noreferrer">
