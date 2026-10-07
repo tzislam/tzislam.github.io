@@ -41,7 +41,7 @@
 - DOE Early Career Research Program (ECRP) Award (2022)
 - R&D 100 Award (2019, Scalable Checkpoint-restart library)
 - Director's Science & Technology Award, LLNL (2014); TXST Presidential & Distinction awards
-- $5.25M+ in research funding (PI/Co-PI), of which $3.435M+ as PI, from NSF, DOE, AMD, and national
+- $5.65M+ in research funding (PI/Co-PI), of which $3.535M+ as PI, from NSF, DOE, AMD, and national
   labs (LLNL, BNL, ORNL, LBNL)
 
 ## Community
